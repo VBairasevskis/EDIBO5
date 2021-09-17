@@ -1,0 +1,12 @@
+"""
+Enter in the input the values for displaying the Diamond,
+in this case, the number is the number of
+lines that determines the size of the Diamond.
+"""
+rows = int(input(""))
+# method for the first (top) part of the triangle
+for i in range(rows):
+    print(" "*(rows-i-1) + "* "*(i+1))
+# method for the second (lower) part of the triangle
+for j in range(rows-1, 0, -1):
+    print(" "*(rows-j) + "* "*j)
