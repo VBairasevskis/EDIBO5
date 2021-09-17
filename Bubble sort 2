@@ -1,0 +1,19 @@
+# Input enter your name:
+print("Enter your name:")
+val = input("")
+print("Hello," + val + "!")
+
+# Convert to ASCII
+def convert(val):
+    ascii_values = []
+    for character in val:
+       ascii_values.append(ord(character))
+    print("ASCII CODE:", ascii_values)
+# ASCII Bubble Sort
+    n = len(ascii_values)
+    for i in range(n - 1):
+        for j in range(0, n-i-1):
+            if ascii_values[j] > ascii_values[j+1]:
+                 ascii_values[j], ascii_values[j+1] = ascii_values[j+1], ascii_values[j]
+    print("ASCII CODE Bubble sorted:", ascii_values)
+convert(val)
